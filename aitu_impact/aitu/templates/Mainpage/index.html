@@ -1,0 +1,21 @@
+{% extends 'Mainpage/base.html' %}
+{% load static %}
+
+{% block title %}
+	Main Page
+{% endblock %}
+
+{% block content %}
+	<div style="text-align: center">
+		<img src="{% static 'main/img/main.jpg' %}" alt="main picture" width="800" height="400">
+	</div>
+	<div style="text-align: center">
+		<a href='{% url "wish" %}'>
+			<img src="static/main/img/wish.png"
+			onmouseover=this.src="{% static 'Mainpage/img/wish-hover.png' %}"
+			onmouseout="this.src='static/Mainpage/img/wish.png'"
+			alt="Wish" width="250" height="80">
+		</a>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'Mainpage/base.html' %}
+{% load static %}
+{% block title %}
+	Wish
+{% endblock %}
+
+{% block content %}
+	<div style="text-align: center">
+		<img src="{% static 'Mainpage/img/genshin-wish.gif' %}" alt="main picture" width="1000" height="550">
+	</div>
+	<div style="position: absolute; top: 123px; right: 255px;">
+		<a href='{% url "items" %}'>
+			<img src="{% static 'Mainpage/img/skip-hover.png' %}"
+			onmouseover=this.src="{% static 'Mainpage/img/skip.png' %}"
+			onmouseout=this.src="{% static 'Mainpage/img/skip-hover.png' %}"
+			alt="skip" width="150" height="60">
+		</a>
+	</div>
+{% endblock %}

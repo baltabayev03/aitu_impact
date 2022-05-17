@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}}</title>
+    <link type="text/css" href="{% static 'Characters/css/styles.css' %}" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body style="overflow-x: hidden;
+    background-image: url('/static/Characters/images/aitu.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;">
+
+    {% block mainmenu %}
+    <header id="header">
+        <a class="logo1" href="/donate/">DONATE</a>
+        <a class="logo2" href="/characters/" >CHARACTERS</a>
+        <a class="logo" >AITU IMPACT</a>
+        <a class="logo3" href="/inventory/">INVENTORY</a>
+        <a class="logo4" href="/login/">SIGN UP</a>
+
+
+    </header>
+    {% endblock mainmenu %}
+    {% block content %}
+    {% endblock content %}
+<div style="width: 100%; height: 70px; background-color: rgba(171, 171, 171, 1); margin-top: 100px; position: absolute; bottom: 0"></div>
+</body>
+</html>

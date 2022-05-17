@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+    background-image: url('/static/Characters/images/aitu.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            background-color: #ababab;
+            position: relative;
+            z-index: 999;
+            height: 80px;
+        }
+
+        .header-wrapper {
+            width: 80%;
+            margin:0 auto;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto;
+        }
+
+        nav li {
+            padding: 20px 20px;
+            list-style: none;
+        }
+
+        nav li a {
+            color: black;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+        .left-bar {
+            position: absolute;
+            width: 20%;
+            height: calc(100vh - 75px);
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            background-color: #767676;
+            color: #fff;
+        }
+
+        .left-bar {
+            padding: 30px 0;
+        }
+
+        .content {
+            position: absolute;
+            width: 80%;
+            height: calc(100vh - 75px);
+            right: 0;
+            bottom: 0;
+            background-image: url("static/Donate/background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .content-wrapper {
+            width: 90%;
+            margin: 1.8em auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .content-item {
+            width: 30%;
+            background-color: #555555;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-item img {
+            width: 100%;
+        }
+
+        .content-item h3 {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            font-size: 2em;
+            cursor: pointer;
+        }
+
+        .content-item-text {
+            background-color: #7197a0;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <nav>
+                <li>
+                    <a href="#">DONATE</a>
+                </li>
+                <li>
+                    <a href="/characters/">CHARACTERS</a>
+                </li>
+                <li>
+                    <a href="">AITU IMPACT</a>
+                </li>
+                <li>
+                    <a href="/inventory/">INVENTORY</a>
+                </li>
+                <li>
+                    <a href="">SIGN UP</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="left-bar">
+            <h1>Whishes</h1>
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="content-item">
+                    <img src="static/Donate/Flash.png" alt="">
+                    <h3>10 wishes</h3>
+                    <div class="content-item-text">
+                        <span>0.29$</span>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="static/Donate/Flash.png" alt="">
+                    <h3>100 wishes</h3>
+                    <div class="content-item-text">
+                        <span>4.99$</span>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="static/Donate/Flash.png" alt="">
+                    <h3>1000 wishes</h3>
+                    <div class="content-item-text">
+                        <span>14.99$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

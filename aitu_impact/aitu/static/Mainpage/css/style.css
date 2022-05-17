@@ -1,0 +1,93 @@
+body {
+    margin: auto;
+    overflow-x: hidden;
+    background-image: url('/static/Characters/images/aitu1.png');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+div.wish-btn {
+    position: absolute;
+    top: 590px;
+    left: 625px;
+}
+
+#skip-btn {
+    position: absolute;
+    top: 120px;
+    right: 255px;
+}
+
+div.close-btn {
+    position: absolute;
+    top: 120px;
+    right: 255px;
+}
+
+div.teacher-img img {
+    position: absolute;
+    top: 115px;
+    right: 400px;
+}
+
+img.item1 {
+    margin-top: 350px;
+    margin-right: 750px;
+}
+
+img.item2 {
+    margin-top: 350px;
+    margin-right: 650px;
+}
+
+img.item3 {
+    margin-top: 350px;
+    margin-right: 550px;
+}
+
+img.item4 {
+    margin-top: 350px;
+    margin-right: 450px;
+}
+
+img.item5 {
+    margin-top: 350px;
+    margin-right: 350px;
+}
+
+img.item6 {
+    margin-top: 350px;
+    margin-right: 250px;
+}
+
+img.item7 {
+    margin-top: 350px;
+    margin-right: 150px;
+}
+
+img.item8 {
+    margin-top: 350px;
+    margin-right: 50px;
+}
+
+img.item9 {
+    margin-top: 350px;
+    margin-right: -50px;
+}
+
+img.item10 {
+    margin-top: 350px;
+    margin-right: -150px;
+}
+
+hr {
+    background-color: #8f8f8f;
+    height: 40px;
+    margin-top: 580px;
+}
